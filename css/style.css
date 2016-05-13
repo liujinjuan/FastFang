@@ -1,0 +1,362 @@
+/* banner */
+.banner { position: relative; overflow: auto; text-align: center;}
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+#b04 { width: 744px;}
+#b04 .dots { position: absolute; left: 54%; right: 0; bottom: 10px;}
+#b04 .dots li {display: inline-block;width: 8px;height: 8px;margin: 0 4px;text-indent: -999em;border: 2px solid #fff;  background:#fff;cursor: pointer;float:left;}
+#b04 .dots li.active{background: #000;opacity: 1;float: left;}
+#b04 .arrow { position: absolute; top: 200px;}
+#b04 #al { left: 15px;}
+#b04 #ar { right: 400px;}
+.banner_btm{background: #fff;overflow: hidden;display: inline-block;padding-left:5px;margin-top:-1px;}
+.hd_1{border-right:1px solid #EFEFEF;padding:21px 62px;}
+.hd_1 p{color:#7d7d7d;text-align: right;padding:1px 0;font-size: 20px;}
+.hd_2{margin:0 59px;padding-top:10px;display:inline;}
+.ftred{font-size:30px;color: #d5353b;margin-top:5px;}
+.sj{font-size:16px;color: #7d7d7d;}
+.banner_rightTxt{width: 357px;height: 496px;background: #000;background: rgba(0,0,0,0.6);position: absolute;right: 0;top:0;}
+.banner_rightTxt{color:#fff;font-size:42px;text-align: left;padding-left: 27px;}
+.banner_rightTxt .bangzhu{font-size:16px;margin-top:10px;}
+.Ptxt_tr1{margin-top:60px}
+.videos{display: block;padding-top:40px;margin-top:40px;border-top:1px solid #939393;margin-right: 70px;}
+/*
+* @Description:房屋快手-首页banner
+* @Author:蔺超
+* @Update:20160511
+*/
+i,em{font-style: normal;}
+.sort{margin-top: 20px;background: #fff;}
+.sort .sort_p{height:65px;line-height:65px;padding-left:30px;font-size:20px;color:#7d7d7d;border-bottom:1px solid #EFEFEF;}
+.sort_p  .cD5353B,.sort_navbar li a:hover,.sort_navbar .current{color:#D5353B;}
+.sort_navbar li{float:left;font-size: 16px;color:#7d7d7d;}
+.sort_navbar li a,.sort_navbar span{padding-top:25px;padding-right:25px;display: inline-block;font-size: 16px;}
+.sort_navbar span{width: 70px;text-align: right;padding-left:10px;padding-right: 0;}
+.sort_navbar_1{width:100%;}
+.sort_nav{border-bottom: 1px solid #efefef;height: 69px;line-height: 69px;}
+.sort_nav ul li,.sort_nav ul li a{float: left;font-size: 20px;}	
+.sort_nav ul li a{width: 85px;text-align: center;}
+.sort_nav ul li .active{color: #d5353b;}
+.sort_nav ul .sort_fristli{padding-left:20px;width: 75px;}
+.sort_nav .sort_nav_li{width: 420px;}
+.sort_nav .sort_nav_li span{width: 103px;border-left: 1px solid #efefef;float: left;padding: 0 15px 0 20px;cursor: pointer;position: relative;}
+.sort_nav .sort_nav_li span:hover{color: #D5353B;}
+.sort_nav .sort_nav_li .sort_last{border-right: 1px solid #efefef;}
+.sort_nav .sort_nav_li span i{background: url(../img/biaoshi_03.png) no-repeat;width: 23px;height: 14px;margin-top: 30px;float: right;}
+.sort_nav .sort_nav_li span i.bian{background: url(../img/biaoshi_01.png) no-repeat;width: 23px;height: 14px;margin-top: 30px;float: right;}
+.sort_nav_li .sort_drop{position: absolute;top:69px; left:-1px;width:138px;border:1px solid #EFEFEF;z-index: 2;background: #fff;display: none;}
+.sort_drop .sort_drop_ul{margin: 10px;height:228px;}
+.sort_drop .sort_drop_ul li{height:42px;line-height: 42px;pading: 0 12px;cursor: pointer;font-size: 16px;color: #7d7d7d;border-bottom: 1px dashed #EFEFEF;width: 116px;}
+.sort_details{margin: 20px 15px 0 15px;border-top: 1px solid #efefef;height:400px;}
+.sort_details .sort_details_left{position: relative;width: 620px;}
+.sort_details_left .sort_intro{position: absolute;top:0;left: 0;height: 70px;background: rgba(214,88,91,.9);line-height: 70px;width: 580px;padding: 0 20px;}
+.sort_intro h3{font-size: 24px;color: #fff;}
+.sort_details .sort_details_right{width: 450px;height: 400px;background: #f7f7f7;position: relative;}
+.sort_details_right .sort_details_div{height: 130px;border-top: 1px solid #EFEFEF;}
+.sort_details_right .sort_details_div:first-child{border:0;}
+.sort_details_right .sort_biao{position: absolute;background: url(../img/biao_1.png) no-repeat;width: 26px;height: 45px;top:45%;left:-25px;}
+.sort_details_div .sort_details_bg,.sort_details_div .sort_details_bg1,.sort_details_div .sort_details_bg2{width: 57px;height:57px ;margin: 35px 15px 0 15px;}
+.sort_details_div .sort_details_bg{background: url(../img/qian.png) no-repeat;}
+.sort_wenzi{width: 300px;}
+.sort_wenzi1,.sort_wenzi2,.sort_wenzi3{margin: 0 15px 15px;}
+.sort_wenzi1{margin-top: 29px;}
+.sort_wenzi2{margin-top: 30px;}
+.sort_wenzi3{margin-top: 28px;}
+.sort_wenzi p{margin-bottom: 15px;}
+.sort_wenzi .wenzi_clo{color: #d5353b;font-size:30px;font-weight: bold;}
+.sort_wenzi .wenzi_clo1{color: #000;font-size:24px;}
+.sort_wenzi .wenzi_clo2{margin-top: 15px;font-size: 16px;}
+.sort_wenzi .sort_sale{color: #d5353b;font-size:18px;}
+.sort_details_div .sort_details_bg1{background: url(../img/yuan.png) no-repeat;}	
+.sort_wenzi .wenzi_35{font-size: 24px;color: #d5353b;}
+.sort_wenzi .sort_sale1{color: #7d7d7d;font-size:16px;}
+.sort_details_div .sort_details_bg2{background: url(../img/dui.png) no-repeat;}
+.sort_wenzi a{float: left;border:1px dashed #7D7D7D;width: 53px;height:28px;line-height: 25px;text-align: center;border-radius: 5px;color: #7d7d7d;font-size: 16px;margin: 0 17px 18px 0;}
+/*
+* @Description:房屋快手-排序部分
+* @Author:刘金鹃
+* @Update:20160511
+*/
+/*b_Property strat*/
+.b_pr{ position:relative;background-color:#FFFFFF;margin-top: 20px;}
+.b_below{ position:absolute; top:258px; left:0px; background:url(../img/9_03.png) no-repeat bottom; width:486px; color:#FFFFFF; padding:20px; font-size:24px;}
+.b_palook{ position:absolute;top:20px; left:401px;}
+.b_pa2530{ position:absolute;top:64px; left:406px;color:#FFFFFF; font-size:16px;}
+.b_pcollect{ position:absolute;top:15px; left:481px;}
+.b_pa289{ position:absolute;top:64px; left:482px;color:#FFFFFF; font-size:16px;}
+.onlines a{ -webkit-transform: scale(1.2) translate3d(0, -30px, 0) rotate(-2.5deg);-moz-transform: scale(1.2) translateY(-30px) rotate(-2.5deg);-ms-transform: scale(1.2) translateY(-30px) rotate(-2.5deg);position: absolute;top:0; left:0;transform: scale(1.2) translateX(-24px) translateY(21px) rotate(-31.5deg);background: rgba(218, 82, 87,.8);width: 200px; height:38px;text-align: center; color:#FFF;line-height: 38px;font-size: 16px;}
+.b_span1{color:#D5353B; font-size:30px; margin-left:20px;}
+.b_span3{font-size:24px; margin-left:5px;}
+.b_span2{font-size:16px; margin-right:20px;}
+.b_span4{color:#DD666B; font-size:24px; margin-right:5px;}
+.b_yang{width:525px; background:#F7F7F7; padding-top:10px;; line-height:50px;  margin-bottom:20px;}
+.b_jiazai{ text-align:center; background:#F7F7F7;padding:20px 0; margin:0 15px 20px 15px;cursor: pointer;}
+.b_mt{ margin-top:22px;}
+/*b_Property end*/
+/*
+* @Description:房屋快手-热门房源
+* @Author:毕鹏
+* @Update:20160511
+*/
+/*haihongyan strart*/
+.index_home{background:#fff;padding:20px 15px;margin-bottom: 40px;}
+.index_list{margin-bottom:20px;}
+.marginB0{margin-bottom:0;}
+.photo_letter{font-size: 20px;color:#7d7d7d;width:362px;margin-right: 10px;height: 360px;}
+.photo_letter p{padding-bottom:16px;}
+.photo_letter .paddT10{padding-top: 20px;}
+.Hphoto{margin-right: 10px;position: relative;overflow: hidden;}
+.Hphoto .online,.soon_img i{-webkit-transform: scale(1.2) translate3d(0, -30px, 0) rotate(-2.5deg);-moz-transform: scale(1.2) translateY(-30px) rotate(-2.5deg);-ms-transform: scale(1.2) translateY(-30px) rotate(-2.5deg);position: absolute;top:0; left:0;transform: scale(1.2) translateX(-24px) translateY(21px) rotate(-31.5deg);background: rgba(218, 82, 87,.8);width: 200px;height:38px;text-align: center;color:#fff;line-height: 38px;font-size: 16px;}
+.photo_letter .border1{border-bottom: 1px solid #DDDDDD;}
+.Hhomeimg{margin-right: 10px;}
+.jiantouleft,.jiantouright{margin-bottom:6px;background-color: #F7F7F7;padding: 20px 25px;position:relative;height:137px;}
+.jiantouleft{text-align: left;margin-right: 25px;}
+.jiantouright{text-align: right;margin-left:25px;margin-bottom:0;}
+.colord5353b{color:#d5353b;cursor:pointer;}
+.marginR0{margin-right:0px;}
+.positionAright{position: absolute;top:65px;right:-30px;z-index: 1;}
+.positionleft{position: absolute;top:65px;left:-25px;}
+/*link*/
+.marginT25{margin-top:25px;}
+.basicline{border-bottom: 1px solid #E9E9E9;padding-top: 50px;margin-bottom:50px;
+position:relative;}
+.index_home h2{width:380px; font-size: 24px;color:#7d7d7d;font-weight: normal;position: absolute;left:35%;top: 30px;
+background-color: #fff;text-align: center;}
+.Hlink{width: 708px;border-left: 1px solid #e9e9e9;
+border-bottom: 1px solid #e9e9e9;}
+.Hlink a,.Hlink a img{float: left;}
+.Hlink a img{border-right:1px solid #E9E9E9;border-top:1px solid #E9E9E9;}
+.Hlink i{float: left;}
+.linkLetter{font-size:16px;color:#7d7d7d;width: 320px;height:109px;padding:40px 20px;border-top:1px solid #E9E9E9;border-right:1px solid #E9E9E9;}
+.checkAll{height:12px;background: url(../img/beijingzi_03.png) repeat-x;border-bottom:1px solid #E9E9E9;}
+.checkAll a{margin-top:-10px;font-size:24px;font-weight:500;display: inline-block;margin-left:100px;
+border-top:2px solid #BDBDBD;border-bottom:1px solid #A6A6A6;font-family: '宋体';padding:2px 5px;}
+/*haihongyan strart*/
+/*
+* @Description:房屋快手-首页即将上线
+* @Author:海红艳
+* @Update:20160511
+*/
+
+/*soon*/
+.soon{margin-top: 20px;background: #fff;}
+.soon_banner{margin:0 10px;padding: 15px 0;}
+.soon_banner .soon_banner_img{position: relative;overflow: hidden;}
+.soon_banner_img .soon_intro{height: 60px;line-height: 60px;background: rgba(0,0,0,.6);color: #fbfbfb;position: absolute;bottom: 3px;left:0;width:1053px;padding-left: 25px;}
+.soon_intro h3{font-size: 24px;}
+.soon_intro .soon_warn{margin-right: 10px;width: 160px;height: 43px;line-height: 43px;background: #D5353B;border-radius: 5px;margin-top: 10px;cursor: pointer;}
+.soon_warn i{background: url(../img/tixing.png) no-repeat;width: 106px;height: 28px;float: left;margin: 8px 0 0 27px;}
+/*
+* @Description:房屋快手-即将上线页面banner
+* @Author:刘金鹃
+* @Update:20160511
+*/
+.per_wrap{background-color:#fff;margin-top: 59px;margin-bottom: 102px;}
+.per_wrap h1{font-size: 24px;color:#434343;text-align:center;font-weight: normal;padding-bottom: 25px;padding-top: 25px;border-bottom:1px solid #E6E6E6;}
+.per_setList{padding:33px 0;border-bottom:1px solid #F3F3F3;font-size:20px;color:#434343;margin:0 25px;cursor: pointer;}
+.per_setItem{width:148px;margin-right: 56px;}
+.per_setItem{width:148px;margin-right: 56px;font-size:20px;font-weight: normal;background:url(../img/per_line_03.png) no-repeat 122px;}
+.per_expand{background:url(../img/expand.png) no-repeat 51px;padding-right:26px;}
+.per_head{vertical-align: middle;margin-top: -13px;margin-bottom: -13px;}
+.per_setAfter{border-top:1px dashed #e6e6e6;padding-left:118px;padding-top: 51px;margin-top: 33px;display: none;}
+.per_setAfter label{margin-bottom: 20px;display: block;}
+.per_setAfter label span{font-size:18px;color:#959595;padding-right:7px;display:inline-block;width:102px;text-align: right;}
+.per_setAfter input{border:1px solid #f3f3f3;padding:8px 17px;width:213px;font-size: 20px;color:#959595;}
+.per_setAfter i{font-style: normal;font-size:17px;color:#D5353B;margin-left: 10px;display: none;}
+.perbtn_save{width:128px;color:#fff;background-color:#D5353B;border:0;font-size: 18px;border-radius:4px;padding: 11px 0;display: block;margin-left:235px;margin-top:23px;text-align: center;}
+.perbtn_save:hover{color:#fff;}
+.perbtn_save2{margin-top:33px;}
+#tou{display: inline;}
+#touxiang{position:absolute; right:0; top:0; font-size:100px; opacity:0; filter:alpha(opacity=0);}
+.afile{display:inline-block; position:relative; overflow:hidden;text-align: center;border:2px solid #f3f3f3;padding:8px 17px;width:213px;font-size:18px;color:#959595;cursor: pointer;height: 24px;top: 15px;}
+#tou em{font-style: normal;color:#C30007;padding-left:9px;display: none;}
+/*perCenter_change  end*/
+.collect_wrap{background-color:#fff;margin-top:66px;padding-top: 20px;}
+.per_personal{padding:0 15px;}
+.per_details dl{width:528px;padding-bottom:25px;}
+.per_details dt{margin-right: 19px;margin-top: -45px;}
+.per_name{font-size: 24px;color:#7d7d7d;font-weight: normal;margin-bottom: 21px;}
+.per_info{color:#7d7d7d;font-size: 16px}
+.per_info p{display:inline-block;padding-left:31px;height: 22px;line-height: 22px;margin-right: 48px;}
+.per_tel{background: url(../img/per_phone.png) no-repeat;}
+.per_place{background: url(../img/per_mark.png) no-repeat;}
+.per_btnChange{background:#7d7d7d url(../img/per_pencil.png) no-repeat 9px;color:#fff;font-size:14px;padding:5px 9px 5px 33px;margin-top: 22px;cursor: pointer;}
+.per_subnav{border-top:1px solid #f4f4f4;border-bottom:1px solid #dedede;background-color:#fff;margin-bottom:24px;}
+.per_subnav li{float:left;padding:15px 47px;font-size: 18px;color:#7d7d7d;border-right:1px solid #F4F4F4;cursor: pointer;}
+.per_subnav #current{color:#d5353b;border-bottom:3px solid #D5353B}
+/*perCenter_collect  end*/
+/*
+* @Description:房屋快手-个人中心页面
+* @Author:刘倩
+* @Update:20160511
+*/
+.houseId{margin-top: 34px;margin-left: 9px;}
+.houseId img{display: block;}
+#sort_quxiao{background-color:#7D7D7D;margin-left: 45px;}
+.sort_btn{color:#fff;border:0;background-color:#D5353B;font-size: 18px;padding:10px 36px;margin-top: 29px;margin-bottom: 24px;cursor: pointer;outline: none;}
+.add_sort{padding-top: 1px;background-color: #fff;}
+#marginT{margin-top: -3px;}
+/*liuqian*/
+
+.of{ overflow:hidden;}
+.b_pab{ position:absolute; top:-82px; left:728px; z-index:100;}
+.b_jiao{ position:absolute; top:-83px; left:720px;}
+.b_jiao1{ position:absolute; top:-83px; left:999px;}
+.m20{ margin:20px 0;}
+.b_news{border:2px solid red; padding:28px 34px; background:#F6F6F6; margin-top: 20px;}
+.b_sale{font-size:20px; text-align:center; color:#C9C9C9;}
+.b_img{position:absolute; top:2px;left:431px;}
+.b_qian{position:absolute;top:22px; left:600px; color:#FFFFFF; font-size:30px; font-weight:bold;}
+.b_bannerT{ border-bottom:1px solid #F3F3F3; width:100%;}
+.b_bannerB{ width:727px; border-bottom:0; border-right:1px solid #F3F3F3; padding-right:1px; border-top:1px solid #F3F3F3; }
+.b_ban{ border-right:1px solid #F3F3F3; padding:15px; line-height:55px; font-size:24px; color:#CCC; width:50px;}
+.b_ban1{ font-size:24px; margin-left:30px; font-weight:bold; margin-right:300px; padding:15px; color:#434343}
+.b_tupiao { border-bottom:1px solid #F3F3F3; overflow:hidden;  border-top:1px solid #F3F3F3;}
+.b_tupiao  li{ float:left; margin:12px;}
+.b_yishi{  border-bottom:1px solid #F3F3F3; line-height:80px;}
+.b_yishi span{ font-size:24px; margin-left:20px;}
+.b_list1{ border-bottom:1px solid #F3F3F3; overflow:hidden; padding:21px 0; }
+.b_list1 li{ float:left; border:1px dashed #A0A0A0;border-radius:5px; padding:10px; margin:20px 0px 2px 11px; text-align:center; color:#7d7d7d; font-size:18px; width:57px;}
+.b_kitchen{ display:none;}
+.b_kitchen span{ font-size:24px; margin-left:25px; overflow:hidden; }
+.b_click{overflow:hidden;  line-height:20px; padding: 25px ; width:222px; color:#D1D1D1;}
+.b_know{padding:70px 0 10px 25px; overflow:hidden;}
+.b_day span{ display:block; text-align:center;}
+.b_six{background-color:#CCCCCC; color:#DA595D;padding:4px 13px;font-size:24px;}
+.b_tian{background:#FFFFFF; color:#CCCCCC;padding:4px 13px;}
+.b_mag{ margin:20px 15px 20px 70px;}
+.b_remind3{color:#FFFFFF; font-size:20px;margin-top:25px;}
+.b_bottom{padding:12px 18px 12px 10px ; background:#D5353B; width:775px;}
+.b_tianjia{ background:#C30007; width:297px;padding:7px 0;}
+.b_Time{background:#FFFFFF; color:#CCCCCC;padding:4px 5px;}
+.b_b12{background-color:#CCCCCC; color:#DA595D;padding:4px 5px;font-size:24px;}
+.b_remind{background:#C30007; color:#FFFFFF; float:left; line-height:35px; text-align:center;width:267px; padding:5px 0;}
+.picshow {border-bottom: #d9e0ea 1px solid; border-left: #d9e0ea 1px solid; margin: 0px auto; width: 958px; height: 620px; border-top: #d9e0ea 1px solid; border-right: #d9e0ea 1px solid;}
+.overhide{overflow:hidden;text-indent:-100em;}
+.marTop10{margin-top:10px;}
+.wrap{width:1100px;margin:0 auto;}
+#picSlideWrap{background:#fff;padding-bottom:80px;}
+.titleh3{height:70px;line-height:70px;text-align:center;background:url(../images/ico/dot.gif) repeat-x left bottom;width:910px;margin:0 auto;font-size:26px;color:#000;}
+.titleh4{text-align:center;font-size:12px;color:#000;font-weight:normal;padding:10px 0 20px 0px;}
+.imgnav{width:1072px;margin:10px auto;}
+#content{margin:0px auto;}
+#content p{text-indent:2em;color:#333;}
+.imgnav{ position:relative;margin:0 auto;width:1073px;}
+#img{z-index:10;width:1073px;position:relative;text-align:center;}
+#img img{height:570px;display:none;}
+#front{position:absolute;left:0px;top:0px;z-index:10;cursor:pointer;width:394px;height:578px;}
+#front a{ position:absolute;left:20px;top:224px;display:block;background: url(../img/b888_03.png) no-repeat;width:104px;height:104px;display:none;}
+#next{ position:absolute;right:0px;top:0px;z-index:10;cursor:pointer;width:394px;height:578px;}
+#next a{ position:absolute;right:-31px;top:224px;display:block;background: url(../img/b882_03.png) no-repeat;width:104px;height:104px;display:none;}
+#cbtn{position:relative;height:122px;margin-top:12px;}
+#cbtn ul{position:relative;width:10000px;}
+#cbtn ul li{float:left; margin-right:10px;width:250px;cursor:pointer;text-align:center;position:relative;}
+#cbtn ul li img{width:252px;height:155px;display:block;}
+.ctrl div{clear:both;}
+.hov{ border:1px solid #999;}
+#cSlideUl{width:1100px;height:180px;overflow:hidden;position:relative;top:10px;margin:0 auto;}
+.picSildeLeft{cursor:pointer;position:absolute;top:82px;left:-5px;z-index:9;}
+.picSildeRight{cursor:pointer;position:absolute;top:82px;right:-5px;z-index:9;}
+/*
+* @Description:房屋快手-详情上
+* @Author:毕鹏
+* @Update:20160511
+*/
+
+
+
+
+/* particulars_fangyuanxia */
+.fany{background: #fff;font-size:24px;margin-top:25px;}
+.fy{color:#7d7d7d;font-weight:normal;padding:24px 16px 24px 16px;border-right: 1px solid #EFEFEF;font-size:24px;}
+.cd{padding:22px 16px 22px 16px;}
+.cd span{border:1px solid;padding:5px 20px;font-size:18px;color: #d5353b;margin-left: 30px;}
+.cx{padding:24px 70px 24px 70px;border-right:1px solid #EFEFEF;border-left:1px solid #EFEFEF;color:#d5353b}
+.lc{padding:24px 70px 24px 70px;color:#d5353b}
+.fany_top{border-bottom:1px solid #EFEFEF}
+.home_sel{padding:29px 12px;color:#d5353b}
+.home_sel span{font-size:16px;margin-left: 30px;}
+.home_jsa{padding:0 15px;font-size:18px;}
+.sel_h5{padding:16px 95px 17px 50px;border-bottom:1px solid #E5E5E5}
+.sel_h5 span{color:#d5353b}
+.home_right{margin-left:18px;border:1px solid #E5E5E5;width:329px;display: inline}
+.home_right .cen{margin-left: 15px;margin-bottom: 10px}
+.home_right em{padding:8px 33px;font-style: normal;border:1px solid #E5E5E5;border-right:0;margin-top:10px;margin-left:}
+.home_right b{padding:8px 110px 8px 32px;font-weight: normal;border:1px solid #E5E5E5;margin-top:10px}
+.current_bgn{background: #EFEFEF}
+.home_id{padding:16px 0;color:#7d7d7d}
+.shu{padding:0 20px;}
+.collect{border:1px solid;font-size:24px;padding:10px 30px;display: inline-block;background: #D5353B;margin-left: 18px;border-radius: 5px;color:#fff;margin-top:39px;margin-bottom: 30px;}
+.collect i{font-size:30px;display: inline-block;vertical-align: -3px;margin-right: 10px;}
+.recommend{background: #fff;margin-top:25px;padding-bottom: 60px;}
+.top_btm{border-bottom: 1px solid #EFEFEF}
+.tehui{font-size:24px;}
+.wth_523{width:518px;margin:0 15px;margin-top:21px;border:1px solid #E5E5E5;display: block}
+.bor_qu{border-bottom: 1px solid #E5E5E5;}
+.posijia{background: #000;background: rgba(0,0,0,0.6);border-radius: 50%;display: block;width: 86px;height: 86px;position: absolute;top:60px;;left: 200px;}
+.sheh{border-right:1px solid #E5E5E5;padding:19px 110px 19px 20px;display: inline-block;font-size:24px;}
+.nums{font-size:24px;text-align: center;color:#d5353b;padding-left: 10px;display: inline;margin-top:20px;margin-left: 10px;}
+.bg_yuan{background: url("../img/xq_3.gif") no-repeat center top;width: 55px;height: 55px;margin-right: 25px;}
+.bg_rmb{background: url("../img/xq_4.png") no-repeat center top;width: 55px;height: 55px;margin-right: 25px;}
+.dl_s{padding:34px 0 34px 21px;border-top:1px solid #E5E5E5;margin-top:-3px;}
+.pingmi{font-size: 18px;color: #434343}
+.pingmi .p1{margin-top:-5px;}
+.pingmi span{font-size: 30px;color:#d5353b;}
+.pingmi .pm{font-size:18px;}
+.p1 .tao{font-size: 14px;color:#434343;}
+.p1 .font_18{font-size: 18px;color:#434343;margin-left: 10px;}
+.pingmi .col_reds{color:#d5353b;}
+.btntwo{border-top:1px solid #E5E5E5;padding-left:80px;}
+.cnet_btom{background: #fff;margin-top:30px;}
+.QA{border-bottom: 2px solid #FBFBFB}
+.wend{font-size:24px;}
+.call{font-size: 18px;padding:24px 16px 22px 16px;margin-right: 10px;color:#7d7d7d}
+.call em{color:#cc1118}
+.padds{padding:37px 0 0 26px}
+.wth_863{width: 863px;}
+.wth_863 p{line-height: 1.6}
+.padds .zhenw{font-size: 18px;color: #7d7d7d;}
+.headp{margin-right: 18px}
+.allem_name,.allem_name a{font-size: 18px;color: #7d7d7d;}
+.kf{background: #F6F6F6;border-radius: 5px;padding:18px 0 37px 20px;margin-top:30px;width:890px}
+.tuz{margin-right:20px;}
+.kfhf{font-size: 18px;margin-left: -8px;color: #7d7d7d}
+.kskf{color:#d5353b;font-size: 18px;margin-right:20px;}
+.riqi{font-size:14px;}
+.patwo{border-top:2px solid #FBFBFB;margin-top:29px;}
+.textar{border-top:2px solid #FBFBFB;margin-top:32px;padding-top: 32px;}
+.textar p{width: 968px;height: 84px;background: #F6F6F6;border-radius: 7px;margin:0 auto;font-size:18px;color:#D0D0D0;margin-left: 25px;padding:24px 0 0 25px;}
+.btm_wen{float: right;margin-right: 80px;margin-top:22px;}
+/* particulars_fangyuanxia end */
+/*
+* @Description:房屋快手-详情页“房源以下”
+* @Author:蔺超
+* @Update:20160513
+*/
+/* right_floatnav */
+.poisfixed{position: fixed;top:50px;right:20px;z-index: 1;display: none;}
+.fixed_bg{background: #fff;text-align: center;width: 72px;}
+.fixed_bg a{display: block;padding:10px 0;border-top:1px solid #E5E5E5}
+.Rfixed_styles span{display: block}
+.txt_column{padding-top:7px;font-size: 16px;}
+.color_C{background: #D5353B;color:#fff;}
+.fixed_imgpian1{background: url("../img/Rnav_1_03.gif") no-repeat center;width:36px;height:36px;display:block;margin:0 auto}
+.color_C .fixed_imgpian1{background: url("../img/fixednavs_2_1.gif") no-repeat center;}
+.fixed_imghux1{background: url("../img/fixednavs_3.gif") no-repeat center;width:36px;height:36px;display:block;margin:0 auto}
+.color_C .fixed_imghux1{background: url("../img/fixednavs_3_1.gif") no-repeat center;}
+.fixed_imgxing1{background: url("../img/fixednavs_1.gif") no-repeat center;width:36px;height:36px;display:block;margin:0 auto}
+.color_C .fixed_imgxing1{background: url("../img/fixednavs_1_2.gif") no-repeat center;}
+.fixed_imgquan1{background: url("../img/quan.gif") no-repeat center;width:36px;height: 36px;display: block;margin:0 auto}
+.color_C .fixed_imgquan1{background: url("../img/quan2.gif") no-repeat center;}
+.fixed_imgwen1{background: url("../img/wenhao.gif") no-repeat center;width:36px;height: 36px;display: block;margin:0 auto}
+.color_C .fixed_imgwen1{background: url("../img/wenhao2.gif") no-repeat center;}
+.RiNav_btm{background: #fff;margin-top:18px}
+.erwema{background: url("../img/erweima.gif") no-repeat center;width: 42px;height: 41px;margin: 0 auto;display: block;padding: 17px 0;}
+.erweiposi{position: absolute;left: -150px;;top: -75px;display: none}
+.rou_top{background: url("../img/top_rou.gif") no-repeat center;width: 36px;height: 16px;display: block;margin:0 auto;border-top:1px solid #E5E5E5;padding:29px 18px;}
+/* right_floatnav end*/
+/*
+* @Description:房屋快手-右浮动层
+* @Author:蔺超
+* @Update:20160513
+*/

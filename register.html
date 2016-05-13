@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>房屋快手-注册</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/city-picker.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/cityData.js" ></script>
+		<script type="text/javascript" src="js/IIInsomniaCityPicker.js" ></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<h1 class="fl"><a href="javascript:;">房屋快手</a></h1>
+				<div class="city fl">
+					<p class="fl" id="cityChoice"><span>北京</span><br>
+					<a href="javascript:;" id="s_province" name="s_province">[切换城市]</a></p>
+					
+
+				</div>
+				
+				
+				<script>
+				    var cityPicker = new IIInsomniaCityPicker({
+				        data: data,
+				        target: 'cityChoice',
+				        valType: 'k-v',
+				        hideCityInput: {
+				            name: 'city',
+				            id: 'city'
+				        },
+				        hideProvinceInput: {
+				            name: 'province',
+				            id: 'province'
+				        },
+				        
+				    });
+				
+				    cityPicker.init();
+				</script>
+
+				
+				<form>
+					<input type="text" placeholder="地铁、小三居、五环内" />
+					<a href="javascript:;"></a>
+					<span></span>
+				</form>
+				<div class="fr">
+					<a href="javascript:;" id="sign">请登录</a> 
+					<span class="fenge"></span>
+					<a href="register.html">免费注册</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="wrap clearfix">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="hot_list.html">热门</a></li>
+					<li><a href="shangxian.html">即将上线</a></li>
+					<li><a href="javascript:;">我们</a></li>
+					<li style="background: none;"><a href="javascript:;">新手？</a></li>
+				</ul>
+				<div class="fr">
+					<div class="phone fl">
+						Easy，手机号码直接登录
+					</div>
+					<div class="jian fl">
+						<a href="javascript:;" id="jian"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--header end-->
+		<div class="wrap register">
+			<div class="register_title">快速注册</div>
+			<div class="register_content">
+				<form class="clearfix">
+					<div class="clearfix zhong" style="width: 100%;">
+						<label>*</label>
+						<input type="text" placeholder="手机号" class="mobile" id="tel"  onBlur="checkForm()" onclick="checkForm()" />
+						<span id="pro_tel"></span>
+					</div>
+					<div class="clearfix zhong" style="width: 100%;">
+						<label>*</label>
+						<input type="password" placeholder="密码" class="password" id="pwd"  onBlur="checkForm()" onclick="checkForm()" />
+						<span id="pro_pwd"></span>
+					</div>
+					<label>*</label><input type="text" placeholder="验证码" class="verification" />
+					<img src="img/register_16.png" class="fl" style="margin-left: 10px;">	
+					<div class="gou">	
+						<label>&nbsp;</label>
+						<input name="CanSavebutton" id="CanSavebutton" type="checkbox" value="true" class="ckboxture" checked>
+	 					<input id="CanSave" name="CanSave" type="hidden" value="true">	
+						<p>我已经阅读并同意<a href='#'>《注册协议》</a></p>
+					</div>
+					<a onclick="return checkForm()" class="btn">开始注册</a>					
+				</form>
+				<p class="like">已有账号<a href="javascript:;" id="sign1">立即登录</a></p>
+			</div>
+		</div>
+		
+	<script>	
+		function checkForm(){
+			var tel=document.getElementById("tel");
+			var pro_tel=document.getElementById("pro_tel");
+			if(tel.value==""){
+				pro_tel.innerHTML="请输入您的真实手机号码作为账户名!";
+				$("#pro_tel").css({"background":"url(img/register06.png) no-repeat","width":"245px","height":"34px"});
+				return false;
+			}
+			var myreg = /^(1(3|4|5|8){1}[0-9]{1})+\d{8}$/;
+			if(!myreg.test(tel.value)){
+				pro_tel.innerHTML="请输入您的真实手机号码作为账户名!";				
+				$("#pro_tel").css({"background":"url(img/register06.png) no-repeat","width":"245px","height":"34px"});
+				return false;
+			}else{
+				pro_tel.innerHTML=" ";  
+				$("#pro_tel").css({"display":"none"});
+			}
+			//手机验证
+			var pwd=document.getElementById("pwd");
+			var pro_pwd=document.getElementById("pro_pwd");
+			if (pwd.value==""){
+				pro_pwd.innerHTML="请输入密码!";
+				$("#pro_pwd").css({"background":"url(img/register_06_06.png)","width":"95px","height":"34px"});
+				return false;
+			}else{
+				pro_pwd.innerHTML=" ";
+				$("#pro_pwd").css({"display":"none"});
+			}
+			//验证密码
+		}
+		//对号添加
+		$("#CanSavebutton").click(function () {
+	        if (!!$("#CanSavebutton").is(':checked')) {
+	            $("#CanSavebutton").addClass('ckboxture');
+				$('#CanSave').val('true');
+	        } else {
+	            $("#CanSavebutton").removeClass('ckboxture');
+				$('#CanSave').val('false');
+	        }
+
+    	});
+	</script>
+		
+	<!--regster end-->	
+		<div class="footer">
+			<div class="wrap">
+				<div class="footer_center clearfix">
+					<div class="footer_left fl">
+						<ul class="clearfix">
+							<li><a href="javascript:;">帮助</a></li>
+							<li><a href="javascript:;">关于我们</a></li>
+							<li><a href="javascript:;">一起工作</a></li>
+							<li><a href="javascript:;">寻求合作</a></li>
+							<li style="background: none;"><a href="javascript:;">联系我们</a></li>
+						</ul>
+						<p>
+							©2014. FastFang, Inc. China. All Rights Reserved. 京ICP备14004852号
+							<span>[北京发斯特房科技有限公司]</span>
+						</p>
+					</div>
+					<div class="footer_right fr">
+						<img src="img/footer_06.png">
+						<img src="img/footer_03.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer end-->
+		
+		
+		<div class="sign">
+			<div class="clearfix hidd">
+				<img src="img/deng_03.png">
+			</div>
+			<div class="fast">
+				<h3>快速登录</h3>
+				<form class="clearfix" style="position: relative;">
+					<input type="text" placeholder="手机号" class="yong"  id="user" onBlur="checkForma()" onclick="checkForma()" />
+					<span id="pro_user"></span>
+					<input type="password" placeholder="密码" class="mi" id="pwdd"  onBlur="checkForma()" onclick="checkForma()" />
+					<span id="pro_pwdd"></span><br>
+					<input type="text" placeholder="验证码" class="yan" />
+					<img src="img/deng_14.png">
+				</form>
+				
+		<!--表单验证-->
+			<script>
+				function checkForma(){
+					var tel=document.getElementById("user");
+					var pro_user=document.getElementById("pro_user");
+					if(tel.value==""){
+						pro_user.innerHTML="请输入手机号码!";
+						$("#pro_user").css({"position":"absolute","top":"8px","right":"5px","color":"#D5353B"});
+						return false;
+					}
+					var myreg = /^(1(3|4|5|8){1}[0-9]{1})+\d{8}$/;
+					if(!myreg.test(tel.value)){
+						pro_user.innerHTML="请输入有效的手机号码!";
+						$("#pro_user").css({"position":"absolute","top":"8px","right":"5px","color":"#D5353B"});
+						return false;
+					}else{
+						pro_user.innerHTML=" ";   
+					}
+					//手机验证
+					
+					var age=document.getElementById("pwdd");
+					var pro_pwdd=document.getElementById("pro_pwdd");
+					if(age.value.length==""){
+						pro_pwdd.innerHTML="密码不能为空！";
+						$("#pro_pwdd").css({"position":"absolute","top":"61px","right":"5px","color":"#D5353B"});
+						return false; 
+					}else{
+						pro_pwdd.innerHTML=" ";
+					}
+					//验证密码
+				}
+			</script>
+				
+	<!--//表单验证-->			
+				<div class="clearfix mb">
+					<a href="javascript:;" class="fl">忘记密码？</a>
+					<a href="javascript:;" class="fr">免费注册</a>
+				</div>
+				<button>立即登录</button>
+			</div>
+		</div>
+		<div class="loading"></div>
+		
+		
+		<script>                                                                                                                                                                                                                                                        
+			$(function(){
+				$('#sign1,#jian,#sign').on("click",function(){
+					$('.sign,.loading').show();
+				});
+				$('.hidd img').on("click",function(){
+					$('.sign,.loading').hide();
+				});
+			});
+		</script>
+		
+		
+		
+
+	 
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

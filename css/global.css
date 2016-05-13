@@ -1,0 +1,121 @@
+@charset /"utf-8";
+/* CSS Document */
+body,dd,dl,dt,ul,li,h1,h2,p,h3,h4{margin:0;padding:0;}
+body{font: 14px 'Helvetica Neue', Tahoma, Arial, "Hiragino Sans GB", 'Microsoft YaHei', SimSun, sans-serif,"微软雅黑";color: #2d404d; background-color: #f6f6f6;}
+.wrap{ width:1100px; margin:0 auto;}
+a{color: #2D404D;font-size:14px; text-decoration:none;}
+a:hover{color:#CC1118;text-decoration:none;}
+ul{ list-style:none;}
+img{border:0; margin:0;padding:0;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{ content:"\200B";display:block;height:0;clear:both;}
+.clearfix{*zoom:1;}
+.m15{ margin: 0 15px;}
+/* common end */
+.header{ background-color: #fff; height:90px; line-height: 88px;}
+.header h1 a{ text-indent: -999px; display: inline-block; background: url(../img/logo_03.png) no-repeat; width:146px; height: 51px; vertical-align: middle; margin-left: 14px; margin-right: 14px;}
+.city p{ font-size: 16px; color:#434343; line-height: 25px; margin-top: 25px;}
+.city p a{font-size: 12px;color:#434343;}
+.city p a:hover{color:#cc1118;}
+.header form input{ width: 258px; height: 20px; padding:10px 15px; border: 2px solid #D5353B; border-radius: 6px; margin-left: 100px; position: relative;outline:none;font-size: 14px;}
+.header form a{ display: inline-block; background: url(../img/fangdajing_03.png)no-repeat;width: 20px; height: 22px; position: absolute;top:35px;right:-85px;}
+.header form span{ border-left: 1px solid #D5353B; display: inline-block; height:20px;width: 1px; position: absolute; top:36px; right:-50px;}
+.header form{ position: relative; width:292px; height: 44px; float: left;}
+.header .fr a{ font-size: 18px;}
+.fenge{display: inline-block;width:1px; height:15px; border-left: 1px solid #a0a0a0; margin:0 10px;}
+.nav{ background-color: #D5353B; height: 60px; line-height: 60px;}
+.nav ul li{ float: left; padding: 0 33px; background:url(../img/logo_3.png) no-repeat center right;}
+.nav ul li a{ display: block; font-size: 20px; color:#fff;}
+.phone{ width: 285px; height: 60px; background-color: #C30007; line-height: 60px; padding-left: 30px; font-size: 18px; color:#fff;border-left: 2px solid #E53D43;}
+.nav .jian a{ float: right; background: url(../img/shou_07.png) no-repeat center right; display: inline-block; width: 70px; height: 60px; margin-right: 26px;}
+.nav .jian{ background-color: #8F0006; width: 70px; height: 60px;}
+/* header end*/
+/*
+* @Description:房屋快手-头部
+* @Author:谢元波
+* @Update:20160511
+*/
+
+.footer{ background-color: #313131; height: 125px; border-top:7px solid #DADADA}
+.footer_left{ width: 660px;}
+.footer_center{ padding-top: 45px;}
+.footer_left ul li{ float: left; padding: 0 15px; background: url(../img/footer_3.png) no-repeat center right;}
+.footer_left ul li a{ color:#a3a3a3; font-size: 14px; margin-right: 8px;}
+.footer_left p,.footer_left p span{ color:#6a6a6a; padding-left:15px; line-height: 30px;}
+.footer_left p span{ padding-left: 5px;}
+.footer_right img{ margin-left: 20px;}
+.footer_right{ margin-top: -8px;}
+/*footer end*/
+/*
+* @Description:房屋快手-尾部
+* @Author:谢元波
+* @Update:20160511
+*/
+
+.sign{width: 340px; height: 350px; background-color: #fff; z-index:999;display:none; position: absolute; top:177px; left: 39%;}
+.loading{position:fixed;top:0;left:0;z-index:1;display:none;width:100%;height:100%;background:#000;opacity:.5;}
+.sign .fast{padding: 0 50px 40px;}
+.sign .fast h3{ font-size: 20px; color:#7d7d7d; font-weight: normal; margin-bottom: 20px;}
+.hidd img{float:right;cursor: pointer;}
+.hidd{ padding:10px 10px 0;}
+.fast form input{ width: 175px; height: 15px; padding: 10px 20px 10px 45px; font-family: "微软雅黑"; margin-bottom: 15px;outline:none;border: 0; border: 1px solid #E8E8E8;font-size: 16px;}
+.yong{ background: url(../img/deng_07.png) no-repeat top left;}
+.mi{ background:url(../img/deng_10.png) no-repeat top left;}
+.fast form .yan{width:90px;padding: 10px 20px; float: left;}
+.fast form img{ float: right;}
+.mb{ margin-bottom: 15px;}
+.fast button,.mask_content button{ width:250px; height: 40px; text-align: center; padding: 8px 0; line-height: 24px; border: none; font-family: "微软雅黑";background-color:#D5353B;border-radius: 4px;color:#fff; font-size: 18px; cursor:pointer;}
+/*denglu end*/
+/*
+* @Description:房屋快手-登录部分
+* @Author:谢元波
+* @Update:20160511
+*/
+
+.mask{width: 492px; height: 516px; background-color: #fff; border-radius:10px;z-index: 9;}
+.mask .mask_content{padding: 0 100px 40px; text-align: center;}
+.mask_content .bi{ margin-bottom: 15px;}
+.mask_content p{color:#434343; font-size: 24px;}
+.mask_content form input{width: 215px; height: 12px; padding:15px 20px 15px 55px; background: url(../img/Լ_07.png) no-repeat top left;border: 0; border: 1px solid #E8E8E8; margin-top: 45px; margin-bottom: 25px;font-size: 16px;outline: none;}
+.mask_content button{width:292px;border-radius: 0;}
+.mask_footer{ background-color: #f0f0f0; height: 105px; background-position: bottom;margin-top: 27px;border-radius: 0 0 10px 10px;}
+.mask_footer .mask_content p{color:#434343; font-size: 18px;}
+.mask_footer .mask_content .host{ padding-top: 32px;}
+.mask_footer .mask_content .number{color:#6e6e6e; font-weight: 600;}
+/*mask end*/
+/*
+* @Description:房屋快手-登录部分
+* @Author:谢元波
+* @Update:20160511
+*/
+
+
+.register{margin-top: 60px; margin-bottom: 73px;}
+.register_title{margin-left: 25px; margin-right: 25px; width: 100%; height: 55px; background-color: #D5353B;text-align: center;line-height: 55px; color:#fff; font-size: 20px; border-radius: 5px 5px 0 0;}
+.register_content{margin-left: 25px; margin-right: 25px;width: 100%; height: auto; background-color: #fff;border-radius: 0 0 5px 5px; position: relative;}
+.register_content form{ padding: 50px 32px 50px 135px;   margin-left:20px;padding-right: 300px;}
+.register_content form input{width: 210px; height: 20px;outline:none;border: 0; border: 1px solid #E8E8E8; padding: 10px 25px 10px 55px; font-family: "微软雅黑"; margin-bottom: 15px;display: block; float: left;font-size: 16px;}
+.register_content form .mobile{ background: url(../img/register_03.png) no-repeat top left;}
+.register_content form .password{ background: url(../img/register_10.png) no-repeat left top;}
+.register_content form label{color:#E13333; float: left; line-height: 51px; margin-right: 10px;font-size: 24px;}
+.register_content form .verification{width: 120px; height: 21px; padding: 12px 20px; float: left;}
+.register_content form p{ color:#7D7D7D;font-size: 16px;  float: left; margin-left: 5px; margin-top: 3px;}
+.register_content form p a{ color:#d5353b;  font-size: 16px; cursor: pointer;}
+.register_content form p a:hover{text-decoration: underline;}
+.register_content form .btn{ float: left; clear: both; width:226px; height: 40px; color:#fff; background-color: #D5353B;border: none; font-size: 16px; font-family: "微软雅黑"; margin-bottom: 55px;margin-left: 90px; text-align: center; line-height: 40px; display: block; cursor: pointer;} 
+.register_content .like { font-size: 16px; color:#7D7D7D; position: absolute;bottom: 52px; right: 45px;}
+.register_content .like a{font-size: 14px;color:#fff; width: 90px; height: 30px; display: inline-block; background-color: #D5353B;text-align: center; line-height: 30px; margin-left: 10px;}
+.register_content form .zhong span{float: left; margin-left: 20px; line-height: 34px; padding-left: 45px;}
+.register_content form .zhong #pro_pwd{color:#E13333;}
+.border{ width: 25px; height:25px;border: 1px solid #e6e6e6; float: left; margin-left: 24px;}
+.gou{clear: both; float: left;}
+
+.ckboxture{ background: url(../img/register_20.png) no-repeat 3px 3px !important;}
+#CanSavebutton{width: 25px;-webkit-appearance: none;height: 25px;border: 1px solid #D9D9D9;float: left; padding: 0; cursor: pointer;box-shadow: 1px 2px 1px 1px #f2f2f2 inset;}
+/*register end*/
+/*
+* @Description:房屋快手-注册部分
+* @Author:谢元波
+* @Update:20160511
+*/

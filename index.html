@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>房屋快手</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/city-picker.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="js/jquery-1.12.1.js"></script>
+		<script type="text/javascript" src="js/unslider.min.js"></script>
+		<script src="layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/IIInsomniaCityPicker.js"></script>
+		<script type="text/javascript" src="js/cityData.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<h1 class="fl"><a href="javascript:;">房屋快手</a></h1>
+				<div class="city fl">
+					<p class="fl" id="cityChoice"><span>北京</span><br>
+						<a href="javascript:;" id="s_province" name="s_province">[切换城市]</a></p>
+
+				</div>
+
+				<form>
+					<input type="text" placeholder="地铁、小三居、五环内" />
+					<a href="javascript:;"></a>
+					<span></span>
+				</form>
+				<div class="fr">
+					<a href="javascript:;" id="sign">请登录</a>
+					<span class="fenge"></span>
+					<a href="register.html">免费注册</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="wrap clearfix">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="hot_list.html">热门</a></li>
+					<li><a href="shangxian.html">即将上线</a></li>
+					<li><a href="javascript:;">我们</a></li>
+					<li style="background: none;"><a href="javascript:;">新手？</a></li>
+				</ul>
+				<div class="fr">
+					<div class="phone fl">
+						Easy，手机号码直接登录
+					</div>
+					<div class="jian fl">
+						<a href="javascript:;" id="jiantou"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--header end-->
+
+		<!-- banner -->
+		<div class="wrap" style="margin-top: 30px;">
+			<div class="clearfix">
+				<div class="banner fl" id="b04" style="position: relative">
+					<ul>
+						<li href="#">
+							<img src="img/bannerimg_gq.gif" width="1100" height="496" alt="" />
+						</li>
+						<li href="#">
+							<img src="img/bannerimg_gq.gif" width="1100" height="496" alt="" />
+						</li>
+						<li href="#">
+							<img src="img/bannerimg_gq.gif" width="1100" height="496" alt="" />
+						</li>
+					</ul>
+					<div class="banner_rightTxt">
+						<p class="Ptxt_tr1">买的是房子?</p>
+						<p>其实是生活,</p>
+						<p>是生活...</p>
+						<p class="bangzhu">帮助您，更省，更快，更舒心的找到TA</p>
+						<a href="#" class="videos"><img src="img/radio.gif" width="202" height="56" alt="" /></a>
+					</div>
+					<a href="javascript:void(0);" class="unslider-arrow04 prev">
+						<img class="arrow" id="al" src="img/left.gif" alt="prev" width="29" height="42">
+					</a>
+					<a href="javascript:void(0);" class="unslider-arrow04 next">
+						<img class="arrow" id="ar" src="img/right.gif" alt="next" width="29" height="42">
+					</a>
+				</div>
+
+			</div>
+			<div class="clerfix banner_btm">
+				<div class="fl hd_1">
+					<p>在这里</p>
+					<p>您可以发现</p>
+				</div>
+				<div class="clearfix fl hd_2">
+					<div class="fl"><img src="img/home.png" width="77" height="77" alt="" /></div>
+					<div class="fl">
+						<p class="ftred">现房</p>
+						<p class="sj">所见即所得</p>
+					</div>
+				</div>
+				<div class="clearfix fl hd_2">
+					<div class="fl"><img src="img/qingpan.png" width="85" height="77" alt="" /></div>
+					<div class="fl">
+						<p class="ftred">清盘</p>
+						<p class="sj">曾有，不在有</p>
+					</div>
+				</div>
+				<div class="clearfix fl hd_2">
+					<div class="fl"><img src="img/tehui.png" width="82" height="77" alt="" /></div>
+					<div class="fl">
+						<p class="ftred">特惠</p>
+						<p class="sj">省钱，去旅行</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
+		<div class="wrap">
+			<div class="sort">
+				<div class="sort_nav">
+					<ul class="clearfix m15">
+						<li class="sort_fristli">排序</li>
+						<li><a href="#" class="active">最热</a></li>
+						<li><a href="#">最省</a></li>
+						<li><a href="#">最近</a></li>
+						<li class="sort_nav_li clearfix">
+							<span id="drop">
+								<em class="price">价格</em><i></i>
+								<div class="sort_drop  drop1">
+									<ul class="sort_drop_ul">
+										<li>100万以下</li>
+										<li>100万-150万</li>
+										<li>150万-200万</li>
+										<li>200万-300万</li>
+										<li>300万以上</li>
+									</ul>
+								</div>
+							</span>
+
+							<span id="drop2"><em class="price1">居室</em><i></i>
+								<div class="sort_drop drop2">
+									<ul class="sort_drop_ul">
+										<li>一厅一卫</li>
+										<li>两厅一卫</li>
+										<li>两厅两卫</li>
+										
+									</ul>
+								</div>
+							</span>
+							<span class="sort_last" id="drop3">
+								<em class="price3">面积</em><i></i>
+								<div class="sort_drop drop3">
+									<ul class="sort_drop_ul">
+										<li>100㎡以下</li>
+										<li>100㎡-150㎡</li>
+										<li>150㎡-200㎡</li>
+										<li>200㎡-300㎡</li>
+										<li>300㎡以上</li>
+									</ul>
+								</div>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="sort_details clearfix">
+					<div class="sort_details_left fl">
+						<div class="sort_left_img">
+							<img src="img/hot_1.jpg" width="620" height="400" />
+						</div>
+						<div class="sort_intro">
+							<h3>在通州，一个人35平米的LOFT自定义生活。</h3>
+						</div>
+					</div>
+					<div class="sort_details_right fl">
+						<div class="sort_details_div m15 clearfix">
+							<div class="sort_details_bg fl"></div>
+							<div class="sort_wenzi sort_wenzi1 fl">
+								<p><span class="wenzi_clo">20000</span><span class="wenzi_clo1">元/m2</span><span class="wenzi_clo2 fr">总价70万</span></p>
+								<p class="sort_sale">原价100万，7折，立省30万!</p>
+							</div>
+						</div>
+						<div class="sort_details_div m15 clearfix">
+							<div class="sort_details_bg1 fl"></div>
+							<div class="sort_wenzi sort_wenzi2 fl">
+								<p><span class="wenzi_35">35/m2</span><span class="wenzi_clo2">（一室一厅一卫）</span></p>
+								<p class="sort_sale1">精装4.9 LOFT，一层变两层。</p>
+							</div>
+						</div>
+						<div class="sort_details_div m15 clearfix">
+							<div class="sort_details_bg2 fl"></div>
+							<div class="sort_wenzi sort_wenzi3 fl">
+								<a href="#">地铁</a>
+								<a href="#">学校</a>
+								<a href="#">购物</a>
+								<a href="#">近</a>
+								<a href="#">万科</a>
+								<a href="#">礼品</a>
+							</div>
+						</div>
+						<div class="sort_biao"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--liujinjuan  end-->
+		<div class=" b_Property wrap clearfix b_pr" style="padding-top: 20px;">
+		<div style="padding: 0 15px;width: 1090px;overflow: hidden;">
+			<div class="fl clearfix" style="padding-right: 20px;">
+		<div style="width: 525px;
+    position: relative;
+    overflow: hidden;">
+			<img src="img/b1_03.png" width="525"  height="329"/>
+		<div class="onlines"><a href="#">热门房源</a></div>
+		<p class="b_below">在通州，一个人35平米的LOFT自定义生活。</p>
+			<div class="b_palook"><img src="img/b5_03.png" width="44" height="26" /></div>
+			<p class="b_pa2530">2530</p>
+		<div class="b_pcollect"  data-id="300" data-fav="6"><img src="img/b6_03.png"  width="30" height="29"/></div>
+			<p class="b_pa289" id="b_pa300" style="color:#FFFFFF; font-size:16px;">300</p>
+			<p class="clearfix m10 b_yang">
+				<span class="fl b_span1">23452</span><span class="b_span3">元/m2</span>
+				<span class="fr b_span2" >( 一室一厅一卫) </span><span class="fr b_span4">35m2</span>
+			</p>
+		</div>
+		</div>
+		<div class="fl clearfix" style="padding-right: 20px;">
+		<div style="width: 525px;
+    position: relative;
+    overflow: hidden;">
+		<img src="img/b2_05.png" width="525"  height="329"/>
+		<p class="b_below">在通州，一个人35平米的LOFT自定义生活。</p>
+		<div class="b_palook" ><img src="img/b5_03.png" width="44" height="26" /></div>
+			<p class="b_pa2530">2530</p>
+		<div class="b_pcollect"   data-id="301" data-fav="4"><img src="img/b6_03.png"  width="30" height="29"/></div>
+			<p class="b_pa289" id="b_pa301" style="color:#FFFFFF; font-size:16px;">289</p>
+			<p class="clearfix m10 b_yang">
+				<span class="fl b_span1">32000</span><span class="b_span3">元/m2</span>
+				<span class="fr b_span2">( 一室一厅一卫) </span><span class="fr b_span4">42m2</span>
+			</p>
+		</div>
+		</div>
+		<div class="fl clearfix" style="padding-right: 20px;">
+		<div style="width: 525px;
+    position: relative;
+    overflow: hidden;">
+			<img src="img/b4_09.png" width="525"  height="329"/>
+		<p class="b_below">在通州，一个人35平米的LOFT自定义生活。</p>
+			<div class="b_palook"><img src="img/b5_03.png" width="44" height="26" /></div>
+			<p class="b_pa2530" style="color:#FFFFFF; font-size:16px;">2530</p>
+			<div class="b_pcollect" data-id="289" data-fav="0"><img src="img/b6_03.png"  width="30" height="29"/></div>
+			<p class="b_pa289" id="b_pa289" style="color:#FFFFFF; font-size:16px;">289</p>
+			<p class="clearfix m10 b_yang">
+				<span class="fl b_span1" >23452</span><span class="b_span3">元/m2</span>
+				<span class="fr b_span2">( 一室一厅一卫) </span><span class="fr  b_span4" >35m2</span>
+			</p>
+			</div>
+		</div>
+		<div class="fl clearfix" style="padding-right: 20px;">
+		<div  style="width: 525px;
+    position: relative;
+    overflow: hidden;">
+			<img src="img/b1_03.png" width="525"  height="329"/>
+			<p class="b_below">在通州，一个人35平米的LOFT自定义生活。</p>
+			<div class="onlines"><a href="#">3万抵6万</a></div>
+			<div class="b_palook"><img src="img/b5_03.png" width="44" height="26" /></div>
+			<p class="b_pa2530" style="color:#FFFFFF; font-size:16px;">2530</p>
+			<div class="b_pcollect" data-id="290" data-fav="2"><img src="img/b6_03.png"  width="30" height="29"/></div>
+			<p class="b_pa289" id="b_paa290" style="color:#FFFFFF; font-size:16px;" >290</p>
+			<p class="clearfix m10 b_yang">
+				<span class="fl b_span1" >32000</span><span  class="b_span3">元/m2</span>
+				<span class="fr b_span2" >( 一室一厅一卫) </span><span class="fr  b_span4">42m2</span>
+			</p>
+		</div>
+			</div>
+		</div>
+	<p class="b_jiazai">加载更多</p>	
+</div>
+
+		<!--haihongyan strart-->
+		<div class="wrap">
+			<div class="index_home">
+				<div class="index_list clearfix">
+					<div class="Hphoto fl">
+						<a href="javascript:;"><img src="img/haiindex1.jpg" width="344" height="360" alt="房源" class="fl positionRe"></a>
+						<a href="javascript:;" class="online">即将上线</a>
+					</div>
+					<div class="fl photo_letter">
+						<div class="jiantouleft">
+							<p class="border1">万通新年巨献，天竺百平米三居， 好房子享受好生活</p>
+							<p class="clearfix paddT10"><img src="img/time_03.png" width="25" height="28" class="fl Hhomeimg "><span class="fl colord5353b">添加提醒</span>
+								<img src="img/biao_1.png" alt="jiantou" class="positionleft" width="30" height="43">
+							</p>
+						</div>
+						<div class="jiantouright">
+							<p class="border1">奥森北，最后的地铁阳光屋 一步之遥，巨省到底</p>
+							<p class="clearfix paddT10">
+
+								<span class="fr colord5353b">添加提醒</span>
+								<img src="img/time_03.png" width="25" height="28" class="fr Hhomeimg ">
+								<img src="img/biao2.png" alt="jiantou" class="positionAright" width="30" height="43">
+							</p>
+						</div>
+					</div>
+					<div class="Hphoto fl marginR0">
+						<a href="javascript:;"><img src="img/haiindex2.jpg" width="344" height="360" alt="房源" class="fl"></a>
+						<a href="javascript:;" class="online">即将上线</a>
+
+					</div>
+				</div>
+				<div class="index_list clearfix marginB0">
+					<div class="Hphoto fl">
+						<a href="javascript:;"><img src="img/haiindex1.jpg" width="344" height="360" alt="房源" class="fl positionRe"></a>
+						<a href="javascript:;" class="online">即将上线</a>
+
+					</div>
+					<div class="fl photo_letter">
+						<div class="jiantouleft">
+							<p class="border1">万通新年巨献，天竺百平米三居， 好房子享受好生活</p>
+							<p class="clearfix paddT10"><img src="img/time_03.png" width="25" height="28" class="fl Hhomeimg "><span class="fl colord5353b">添加提醒</span>
+								<img src="img/biao_1.png" alt="jiantou" class="positionleft" width="30" height="43">
+							</p>
+						</div>
+						<div class="jiantouright">
+							<p class="border1">奥森北，最后的地铁阳光屋 一步之遥，巨省到底</p>
+							<p class="clearfix paddT10">
+
+								<span class="fr colord5353b">添加提醒</span>
+								<img src="img/time_03.png" width="25" height="28" class="fr Hhomeimg ">
+								<img src="img/biao2.png" alt="jiantou" class="positionAright" width="30" height="43">
+							</p>
+						</div>
+					</div>
+					<div class="Hphoto fl marginR0">
+						<a href="javascript:;"><img src="img/haiindex2.jpg" width="344" height="360" alt="房源" class="fl"></a>
+						<a href="javascript:;" class="online">即将上线</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--yibu-->
+		<div class="wrap marginT25">
+			<div class="index_home clearfix">
+				<div class="basicline">
+					<h2>我们的合作伙伴</h2>
+				</div>
+				<p class="Hlink clearfix fl">
+					<a href="javascript:;"><img src="img/linkeight.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linkfive.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linkfour.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linkleven.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linknine.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linkone.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linkseven.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linksix.jpg" width="176" height="94" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linktae.jpg" width="176" height="92" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linkten.jpg" width="176" height="92" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linkthree.jpg" width="176" height="92" alt=""></i>
+					</a>
+					<a href="javascript:;"><img src="img/linktwo.jpg" width="176" height="92" alt=""></i>
+					</a>
+				</p>
+				<div class="fl">
+					<p class="linkLetter">真正能够快速的让一套房子找到属于他的家庭或主人。我们省心，客户省钱，这是一个很好的循环。中国房地产的移动互联网模式已经启动，跟得上步伐，才是下一个十年的核心竞争力。
+					</p>
+					<p class="linkLetter checkAll">
+						<a href="#">查看全部</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--hiahongyan end-->
+
+		<div class="footer">
+			<div class="wrap">
+				<div class="footer_center clearfix">
+					<div class="footer_left fl">
+						<ul class="clearfix">
+							<li><a href="javascript:;">帮助</a></li>
+							<li><a href="javascript:;">关于我们</a></li>
+							<li><a href="javascript:;">一起工作</a></li>
+							<li><a href="javascript:;">寻求合作</a></li>
+							<li style="background: none;"><a href="javascript:;">联系我们</a></li>
+						</ul>
+						<p>
+							©2014. FastFang, Inc. China. All Rights Reserved. 京ICP备14004852号
+							<span>[北京发斯特房科技有限公司]</span>
+						</p>
+					</div>
+					<div class="footer_right fr">
+						<img src="img/footer_06.png">
+						<img src="img/footer_03.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer end-->
+
+		<div id="layer" style="display:none">
+			<div class="mask clearfix">
+				<div class="clearfix hidd hidd1">
+					<img src="img/deng_03.png">
+				</div>
+				<div class="mask_content">
+					<img src="img/Լ_03.png" class="bi">
+					<p>请填写您的联系方式</p>
+					<p>以便我们通知看房时间</p>
+					<form style="position: relative;">
+						<input type="text" placeholder="手机号" id="phone" onBlur="checkForm()" />
+						<span id="pro_phone"></span>
+					</form>
+					<button>确认</button>
+				</div>
+				<div class="mask_footer">
+					<div class="mask_content">
+						<p class="host">您也可以直接拨打我们的服务热线</p>
+						<P class="number">400-7654-321</P>
+					</div>
+				</div>
+			</div>
+			<div class="loading"></div>
+		</div>
+		<div class="sign">
+			<div class="clearfix hidd">
+				<img src="img/deng_03.png">
+			</div>
+			<div class="fast">
+				<h3>快速登录</h3>
+				<form class="clearfix" style="position: relative;">
+					<input type="text" placeholder="手机号" class="yong" id="user" onBlur="checkForm()" onclick="checkForm()" />
+					<span id="pro_user"></span>
+					<input type="password" placeholder="密码" class="mi" id="pwdd" onBlur="checkForm()" onclick="checkForm()" />
+					<span id="pro_pwdd"></span><br>
+					<input type="text" placeholder="验证码" class="yan" />
+					<img src="img/deng_14.png">
+				</form>
+				<!--表单验证-->
+				<script>
+					$(document).ready(function(e) {
+						var unslider04 = $('#b04').unslider({
+								dots: true
+							}),
+							data04 = unslider04.data('unslider');
+						$('.unslider-arrow04').click(function() {
+							var fn = this.className.split(' ')[1];
+							data04[fn]();
+						});
+					});
+					//城市切换
+					var cityPicker = new IIInsomniaCityPicker({
+						data: data,
+						target: 'cityChoice',
+						valType: 'k-v',
+						hideCityInput: {
+							name: 'city',
+							id: 'city'
+						},
+						hideProvinceInput: {
+							name: 'province',
+							id: 'province'
+						},
+					});
+					cityPicker.init();
+					//s切换
+					$('#drop').click(function() {
+						$(this).find('i').toggleClass('bian');
+						$('.drop1').toggle();
+					});
+					
+					$('#drop li').click(function(){
+						var $lival=$(this).text();
+						$('.price').text($lival).css("font-size","13px");
+					})
+					$('#drop2').click(function() {
+						$(this).find('i').toggleClass('bian');
+						$('.drop2').toggle();
+					});
+					$('#drop2 li').click(function(){
+						var $lival=$(this).text();
+						$('.price1').text($lival).css("font-size","14px");
+					})
+					$('#drop3').click(function() {
+						$(this).find('i').toggleClass('bian');
+						$('.drop3').toggle();
+					});
+					$('#drop3 li').click(function(){
+						var $lival=$(this).text();
+						$('.price3').text($lival).css("font-size","13px");
+					})
+
+					function checkForm() {
+						//biaodian
+						var tel = document.getElementById("user");
+						var pro_user = document.getElementById("pro_user");
+						if (tel.value == "") {
+							pro_user.innerHTML = "请输入手机号码!";
+							$("#pro_user").css({
+								"position": "absolute",
+								"top": "8px",
+								"right": "5px",
+								"color": "#D5353B"
+							});
+							user.focus();
+							return false;
+						}
+						var myreg = /^(1(3|4|5|8){1}[0-9]{1})+\d{8}$/;
+						if (!myreg.test(tel.value)) {
+							pro_user.innerHTML = "请输入有效的手机号码!";
+							$("#pro_user").css({
+								"position": "absolute",
+								"top": "8px",
+								"right": "5px",
+								"color": "#D5353B"
+							});
+							user.focus();
+							return false;
+						} else {
+							pro_user.innerHTML = " ";
+						}
+						//手机验证
+						var age = document.getElementById("pwdd");
+						var pro_pwdd = document.getElementById("pro_pwdd");
+						if (age.value.length == "") {
+							pro_pwdd.innerHTML = "密码不能为空！";
+							$("#pro_pwdd").css({
+								"position": "absolute",
+								"top": "61px",
+								"right": "5px",
+								"color": "#D5353B"
+							});
+							pwdd.focus();
+							return false;
+						} else {
+							pro_pwdd.innerHTML = " ";
+						}
+						//验证密码
+					}
+					$(function() {
+						var layer1 = '';
+						$('.colord5353b,.soon_warn').click(function() {
+							layer1 = layer.open({
+								type: 1,
+								title: false,
+								area: ['492px', '516px'],
+								closeBtn: 0,
+								content: $('#layer').html()
+							});
+						})
+						$(document).on('click', '.hidd', function() {
+							layer.close(layer1);
+						})
+					})
+				</script>
+
+				<!--//表单验证-->
+				<div class="clearfix mb">
+					<a href="javascript:;" class="fl">忘记密码？</a>
+					<a href="register.html" class="fr">免费注册</a>
+				</div>
+				<button>立即登录</button>
+			</div>
+		</div>
+		<div class="loading"></div>
+
+		<script>
+			$(function() {
+				$('#sign,#jiantou').on("click",function(){
+					$('.sign,.loading').show();
+				});
+				$('.hidd img').on("click",function(){
+					$('.sign,.loading').hide();
+				});
+				
+				// 关注
+				$('.b_pcollect').click(function(){
+					if($(this).attr('data-fav')==0){
+						var id = $(this).attr('data-id');
+						var num = $('#b_pa'+id).html()*1;
+						$('#b_pa'+id).html(num+1);
+						$(this).attr('data-fav',1);
+					}
+					else if($(this).attr('data-fav')==1){
+						var id = $(this).attr('data-id');
+						var num = $('#b_pa'+id).html()*1;
+						$('#b_pa'+id).html(num-1);
+						$(this).attr('data-fav',0);
+					}
+				});
+				$('.b_pcollect').click(function(){
+					if($(this).attr('data-fav')==2){
+						var id = $(this).attr('data-id');
+						var num = $('#b_paa'+id).html()*1;
+						$('#b_paa'+id).html(num+1);
+						$(this).attr('data-fav',3);
+					}
+					else if($(this).attr('data-fav')==3){
+						var id = $(this).attr('data-id');
+						var num = $('#b_paa'+id).html()*1;
+						$('#b_paa'+id).html(num-1);
+						$(this).attr('data-fav',2);
+					}
+				});
+				$('.b_pcollect').click(function(){
+					if($(this).attr('data-fav')==6){
+						var id = $(this).attr('data-id');
+						var num = $('#b_pa'+id).html()*1;
+						$('#b_pa'+id).html(num+1);
+						$(this).attr('data-fav',7);
+					}
+					else if($(this).attr('data-fav')==7){
+						var id = $(this).attr('data-id');
+						var num = $('#b_pa'+id).html()*1;
+						$('#b_pa'+id).html(num-1);
+						$(this).attr('data-fav',6);
+					}
+				});
+				$('.b_pcollect').click(function(){
+					if($(this).attr('data-fav')==4){
+						var id = $(this).attr('data-id');
+						var num = $('#b_pa'+id).html()*1;
+						$('#b_pa'+id).html(num+1);
+						$(this).attr('data-fav',5);
+					}
+					else if($(this).attr('data-fav')==5){
+						var id = $(this).attr('data-id');
+						var num = $('#b_pa'+id).html()*1;
+						$('#b_pa'+id).html(num-1);
+						$(this).attr('data-fav',4);
+					}
+				});
+
+			});
+		</script>
+
+	</body>
+
+</html>

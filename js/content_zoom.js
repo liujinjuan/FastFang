@@ -19,7 +19,6 @@
 						<span class="round_shade_bottomleft"> \</span> \
 						<span class="round_shade_bottomright"> \</span> \
 					</div> \
-					<a href="#close" class="round_box_close" id="zoom_close">关闭</a> \
 				</div>';
                 
     $('body').append(html);

@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/cityData.js" ></script>
     <script type="text/javascript" src="js/IIInsomniaCityPicker.js" ></script>
     <script src="js/carousel_focus.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/content_zoom.js" ></script>
 </head>
 <body>
 <div class="header">
@@ -288,15 +289,25 @@
                     <h4 class="fl fy">推荐</h4>
                     <p class="tehui fl cd">本小区还有其他特惠类型</p>
                 </div>
-
                 <div class="clearfix">
                     <div class="wth_523 fl">
-
                         <div class="clearfix bor_qu">
                             <span class="sheh fl">一个人300平米的自在生活</span>
                             <span class="nums fl">仅一套</span>
                         </div>
-                        <img src="img/xq_1.gif" width="518" height="207" style="border:0;" alt=""/>
+                        <div style="position: relative">
+                        <div class="small_pic">
+                            <a href="#pic_two">
+                                <img src="img/xq_1.gif" width="519" height="207" class="imgC_1" alt=""/>
+                                <a href="#pic_two" class="imgC_2_1 posijia" style="display: block;">
+                                    <img src="img/tianjia.gif" width="86" height="86" alt="" />
+                                </a>
+                            </a>
+                        </div>
+                        <div id="pic_two" style="display:none;">
+                            <img src="img/xq_1.gif" width="819" height="507" alt="" />
+                        </div>
+                        </div>
                         <dl class="clearfix dl_s">
                             <dt class="bg_yuan fl"></dt>
                             <dd class="fl pingmi">
@@ -333,9 +344,21 @@
                             </div>
                         </div>
                         <div style="position: relative">
-                            <img src="img/xq_1.gif" width="519" height="207" alt=""/>
-                            <a href="#" class="posijia"><img src="img/tianjia.gif" width="86" height="86" alt=""/></a>
+                            <div class="small_pic">
+                                <a href="#pic_one">
+                                    <img src="img/xq_1.gif" width="519" height="207" class="imgC_2" alt=""/>
+                                    <a href="#pic_one" class="imgC_2_2 posijia" style="display: block;">
+                                        <img src="img/tianjia.gif" width="86" height="86" alt="" />
+                                    </a>
+                                </a>
+                            </div>
+                            <div id="pic_one" style="display:none;">
+                                <img src="img/xq_1.gif" width="819" height="507" alt="" />
+                            </div>
+
+
                         </div>
+
                         <dl class="clearfix dl_s">
                             <dt class="bg_yuan fl"></dt>
                             <dd class="fl pingmi">
@@ -360,6 +383,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="item" id="item5">
             <div class="wrap">
@@ -484,7 +508,8 @@
             <a href="javascript:;" class="fl">忘记密码？</a>
             <a href="register.html" class="fr">免费注册</a>
         </div>
-        <button>立即登录</button>
+        <button onclick="return checkForm()"
+>立即登录</button>
     </div>
 </div>
 <div class="loading"></div>
@@ -590,6 +615,12 @@
 <script type="text/javascript" src="layer/layer.js" ></script>
 <script>
     $(document).ready(function(){
+    	
+    	 $('div.small_pic a.posijia').fancyZoom({scaleImg: true, closeOnClick: true});
+        $('#zoom_word_1').fancyZoom({width:400, height:200});
+        $('#zoom_word_2').fancyZoom();
+        $('#zoom_flash').fancyZoom();
+
 
         $(".b_list1 li").mouseover(function(){
             var d=$(this).index();

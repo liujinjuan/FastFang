@@ -48,7 +48,7 @@ i,em{font-style: normal;}
 .sort_drop .sort_drop_ul{margin: 10px;height:228px;}
 .sort_drop .sort_drop_ul li{height:42px;line-height: 42px;pading: 0 12px;cursor: pointer;font-size: 16px;color: #7d7d7d;border-bottom: 1px dashed #EFEFEF;width: 116px;}
 .sort_details{margin: 20px 15px 0 15px;border-top: 1px solid #efefef;height:400px;}
-.sort_details .sort_details_left{position: relative;width: 620px;}
+.sort_details .sort_details_left{position: relative;width: 620px;cursor:pointer;}
 .sort_details_left .sort_intro{position: absolute;top:0;left: 0;height: 70px;background: rgba(214,88,91,.9);line-height: 70px;width: 580px;padding: 0 20px;}
 .sort_intro h3{font-size: 24px;color: #fff;}
 .sort_details .sort_details_right{width: 450px;height: 400px;background: #f7f7f7;position: relative;}
@@ -79,18 +79,19 @@ i,em{font-style: normal;}
 */
 /*b_Property strat*/
 .b_pr{ position:relative;background-color:#FFFFFF;margin-top: 20px;}
-.b_below{ position:absolute; top:258px; left:0px; background:url(../img/9_03.png) no-repeat bottom; width:486px; color:#FFFFFF; padding:20px; font-size:24px;}
-.b_palook{ position:absolute;top:20px; left:401px;}
+.b_below{ position:absolute; top:258px; left:0px; height:32px;background: rgba(218, 82, 87,.8);width:486px; color:#FFFFFF; padding:20px; font-size:24px;}
+.b_palook{ position:absolute;top:20px; left:401px;cursor: pointer;}
 .b_pa2530{ position:absolute;top:64px; left:406px;color:#FFFFFF; font-size:16px;}
-.b_pcollect{ position:absolute;top:15px; left:481px;}
+.b_pcollect{ position:absolute;top:15px; left:481px;cursor: pointer;}
 .b_pa289{ position:absolute;top:64px; left:482px;color:#FFFFFF; font-size:16px;}
 .onlines a{ -webkit-transform: scale(1.2) translate3d(0, -30px, 0) rotate(-2.5deg);-moz-transform: scale(1.2) translateY(-30px) rotate(-2.5deg);-ms-transform: scale(1.2) translateY(-30px) rotate(-2.5deg);position: absolute;top:0; left:0;transform: scale(1.2) translateX(-24px) translateY(21px) rotate(-31.5deg);background: rgba(218, 82, 87,.8);width: 200px; height:38px;text-align: center; color:#FFF;line-height: 38px;font-size: 16px;}
+.onlines a:hover{color: #fff;}
 .b_span1{color:#D5353B; font-size:30px; margin-left:20px;}
 .b_span3{font-size:24px; margin-left:5px;}
 .b_span2{font-size:16px; margin-right:20px;}
 .b_span4{color:#DD666B; font-size:24px; margin-right:5px;}
 .b_yang{width:525px; background:#F7F7F7; padding-top:10px;; line-height:50px;  margin-bottom:20px;}
-.b_jiazai{ text-align:center; background:#F7F7F7;padding:20px 0; margin:0 15px 20px 15px;cursor: pointer;}
+.b_jiazai{ text-align:center; background:#F7F7F7;padding:20px 0; margin:0 15px 20px 15px;cursor: pointer;font-size: 20px;color: #959595;}
 .b_mt{ margin-top:22px;}
 /*b_Property end*/
 /*
@@ -267,7 +268,7 @@ border-top:2px solid #BDBDBD;border-bottom:1px solid #A6A6A6;font-family: 'å®‹ä½
 
 
 /* particulars_fangyuanxia */
-.fany{background: #fff;font-size:24px;margin-top:25px;}
+.fany{background: #fff;font-size:24px;margin-top:25px !important;}
 .fy{color:#7d7d7d;font-weight:normal;padding:24px 16px 24px 16px;border-right: 1px solid #EFEFEF;font-size:24px;}
 .cd{padding:22px 16px 22px 16px;}
 .cd span{border:1px solid;padding:5px 20px;font-size:18px;color: #d5353b;margin-left: 30px;}
@@ -284,11 +285,11 @@ border-top:2px solid #BDBDBD;border-bottom:1px solid #A6A6A6;font-family: 'å®‹ä½
 .home_right em{padding:8px 33px;font-style: normal;border:1px solid #E5E5E5;border-right:0;margin-top:10px;margin-left:}
 .home_right b{padding:8px 110px 8px 32px;font-weight: normal;border:1px solid #E5E5E5;margin-top:10px}
 .current_bgn{background: #EFEFEF}
-.home_id{padding:16px 0;color:#7d7d7d}
+.home_id{padding:16px 0;color:#7d7d7d;}
 .shu{padding:0 20px;}
 .collect{border:1px solid;font-size:24px;padding:10px 30px;display: inline-block;background: #D5353B;margin-left: 18px;border-radius: 5px;color:#fff;margin-top:39px;margin-bottom: 30px;}
 .collect i{font-size:30px;display: inline-block;vertical-align: -3px;margin-right: 10px;}
-.recommend{background: #fff;margin-top:25px;padding-bottom: 60px;}
+.recommend{background: #fff;margin-top:25px !important;padding-bottom: 60px;}
 .top_btm{border-bottom: 1px solid #EFEFEF}
 .tehui{font-size:24px;}
 .wth_523{width:518px;margin:0 15px;margin-top:21px;border:1px solid #E5E5E5;display: block}
@@ -326,6 +327,7 @@ border-top:2px solid #BDBDBD;border-bottom:1px solid #A6A6A6;font-family: 'å®‹ä½
 .patwo{border-top:2px solid #FBFBFB;margin-top:29px;}
 .textar{border-top:2px solid #FBFBFB;margin-top:32px;padding-top: 32px;}
 .textar p{width: 968px;height: 84px;background: #F6F6F6;border-radius: 7px;margin:0 auto;font-size:18px;color:#D0D0D0;margin-left: 25px;padding:24px 0 0 25px;}
+.textar textarea{width: 962px;height: 84px;margin-left: 26px;border-radius: 5px;background-color: #f6f6f6;font-size: 18px;outline: none;overflow:hidden; resize:none;border:0;padding-top:24px;padding-left: 28px;color:#010000}
 .btm_wen{float: right;margin-right: 80px;margin-top:22px;}
 /* particulars_fangyuanxia end */
 /*

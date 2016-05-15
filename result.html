@@ -215,9 +215,11 @@
 			</div>
 			<div class="fast">
 				<h3>快速登录</h3>
-				<form class="clearfix">
-					<input type="text" placeholder="手机号" class="yong" />
-					<input type="password" placeholder="密码" class="mi" />
+				<form class="clearfix" style="position: relative;">
+					<input type="text" placeholder="手机号" class="yong" id="user" onBlur="checkForm()" onclick="checkForm()" />
+					<span id="pro_user"></span>
+					<input type="password" placeholder="密码" class="mi" id="pwdd" onBlur="checkForm()" onclick="checkForm()" />
+					<span id="pro_pwdd"></span><br>
 					<input type="text" placeholder="验证码" class="yan" />
 					<img src="img/deng_14.png">
 				</form>
@@ -225,7 +227,8 @@
 					<a href="javascript:;" class="fl">忘记密码？</a>
 					<a href="javascript:;" class="fr">免费注册</a>
 				</div>
-				<button>立即登录</button>
+				<button onclick="return checkForm()"
+>立即登录</button>
 			</div>
 		</div>
 		<div class="loading"></div>
@@ -239,6 +242,53 @@
 					$('.sign,.loading').hide();
 				});
 			});
+			function checkForm() {
+						//biaodian
+						var tel = document.getElementById("user");
+						var pro_user = document.getElementById("pro_user");
+						if (tel.value == "") {
+							pro_user.innerHTML = "请输入手机号码!";
+							$("#pro_user").css({
+								"position": "absolute",
+								"top": "8px",
+								"right": "5px",
+								"color": "#D5353B"
+							});
+							user.focus();
+							return false;
+						}
+						var myreg = /^(1(3|4|5|8){1}[0-9]{1})+\d{8}$/;
+						if (!myreg.test(tel.value)) {
+							pro_user.innerHTML = "请输入有效的手机号码!";
+							$("#pro_user").css({
+								"position": "absolute",
+								"top": "8px",
+								"right": "5px",
+								"color": "#D5353B"
+							});
+							user.focus();
+							return false;
+						} else {
+							pro_user.innerHTML = " ";
+						}
+						//手机验证
+						var age = document.getElementById("pwdd");
+						var pro_pwdd = document.getElementById("pro_pwdd");
+						if (age.value.length == "") {
+							pro_pwdd.innerHTML = "密码不能为空！";
+							$("#pro_pwdd").css({
+								"position": "absolute",
+								"top": "61px",
+								"right": "5px",
+								"color": "#D5353B"
+							});
+							pwdd.focus();
+							return false;
+						} else {
+							pro_pwdd.innerHTML = " ";
+						}
+						//验证密码
+					}
 		</script>
 
 	</body>
